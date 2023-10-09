@@ -17,16 +17,22 @@ export default function Experiences() {
                                 <h4 className={Style.university}>{experience.company}</h4>
                                 <p className={Style.date}>{experience.startDate} - {experience.endDate}</p>
                             </Stack>
-                            <p className={Style.text}>{experience.description}</p>
-                            {/* <ul className={Style.text}>
-                                {experience.activities.map((activity, index) => (
-                                    <li key={index}>
-                                        <Stack direction="row">
-                                            <p className={Style.copy}>{activity}</p>
-                                        </Stack>
-                                    </li>
-                                ))}
-                            </ul>  */}
+                                <p className={Style.text}>{experience.description}</p>
+                            <Stack direction="row" justifyContent="space-between" alignItems="baseline" spacing={2}>
+                                    {<ul>
+                                    <p className={Style.university}>Activities: </p>
+                                        {experience.activities.map((activity, indecs) => (
+                                            <li key={indecs} className={Style.copy}>{activity}</li>
+                                        ))}
+                                    </ul>}
+                                    {<ul>
+                                    <p className={Style.university}>Knowledge: </p>
+                                    {/* <p className={Style.copy}>{experience.knowledge.join(", ")}</p> */}
+                                        {experience.knowledge.map((kn, indecs) => (
+                                            <li key={indecs} className={Style.copy}>{kn}</li>
+                                        ))}
+                                    </ul>}
+                            </Stack>
                         </li>
                     ))}
                 </ul>        
@@ -49,10 +55,9 @@ export default function Experiences() {
                     {info.certifications.map((certification, index) => (
                         <li key={index}>
                             <Stack  direction="row">
-                                <i class="fa fa-check"></i>
+                                <i class="fa fa-check">&nbsp;</i>
                                 <p className={Style.copy}>{certification}</p>   
                             </Stack>
-                            
                         </li>
                     ))}
                 </ul>  

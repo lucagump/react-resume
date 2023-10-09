@@ -99,7 +99,9 @@ export const info = {
             location: 'Milano(MI)',
             description: '',
             startDate: 'March 2023',
-            endDate: 'Now'
+            endDate: 'Now',
+            activities: [],
+            knowledge: []
         },
         {
             position: 'Customer Journey - Mobile App Specialist',
@@ -220,12 +222,12 @@ export const info = {
         'Software development'
     ],    
     technologies: [
-        ' Qt, C++, QML: Cross-Platform Development',
-        ' Can-Bus: Linux Embedded Systems',
-        ' Linux: Embedded Systems and Server',
-        ' Node.JS & Vue.JS: Services and Web Application',
-        ' .NET, C# & Azure DevOps',
-        ' Docker & NGNIX: Microservices' 
+        'Qt, C++, QML: Cross-Platform Development',
+        'Can-Bus: Linux Embedded Systems',
+        'Linux: Embedded Systems and Server',
+        'Node.JS & Vue.JS: Services and Web Application',
+        '.NET, C# & Azure DevOps',
+        'Docker & NGNIX: Microservices' 
     ],
     field: 'Automotive, Formula Student, Linux, Snowboard, Athletics and Mountain Bike'
 }
