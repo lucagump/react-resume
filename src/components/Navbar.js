@@ -7,26 +7,30 @@ import {info} from "../info/Info";
 
 const links = [
     {
-        name: 'Home',
+        to: '/info',
+        active: 'link tree'
+    },
+    {
+        name: 'Experiences',
+        to: '/experiences',
+        active: 'experiences'
+    },
+    {
+        name: info.initials,
+        type: 'initials',
         to: '/',
-        active: 'home'
+        active: 'initials'
+    },
+    {
+        name: 'Technologies',
+        to: '/technologies',
+        active: 'technologies'
     },
     {
         name: 'About Me',
         to: '/about',
         active: 'about'
     },
-    {
-        name: info.initials,
-        type: 'initials',
-        to: '/',
-        active: 'home'
-    },
-    {
-        name: 'Portfolio',
-        to: '/portfolio',
-        active: 'portfolio'
-    }
 ]
 
 export default function Navbar({darkMode, handleClick}) {

@@ -3,7 +3,10 @@ import Style from './BaseLayout.module.scss'
 import Navbar from "./Navbar";
 import Home from "./home/Home";
 import About from "./about/About";
-import Portfolio from "./portfolio/Portfolio";
+import Technologies from "./technologies/Technologies";
+import Experiences from "./experiences/Experiences";
+import Info from "./info/Info";
+import NotFound from "./notfound/NotFound";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
 
@@ -36,9 +39,12 @@ export default function BaseLayout() {
             </Grid>
             <Grid item flexGrow={1}>
                <Routes>
-                  <Route exact path={'/'} element={<Home/>}/>
+               <Route exact path={'/'} element={<Home/>}/>
+                  <Route exact path={'/info'} element={<Info/>}/>
                   <Route exact path={'/about'} element={<About/>}/>
-                  <Route exact path={'/portfolio'} element={<Portfolio/>}/>
+                  <Route exact path={'/technologies'} element={<Technologies/>}/>
+                  <Route exact path={'/experiences'} element={<Experiences/>}/>
+                  <Route exact path={'*'} element={<NotFound/>}/>
                </Routes>
             </Grid>
             <Grid item>
