@@ -8,8 +8,9 @@ export const info = {
     firstName: "Luca",
     lastName: "Martinelli",
     hello: "Hi, I'm Luca Martinelli",
-    initials: "LM", // the example uses first and last, but feel free to use three or more if you like.
+    initials: "", // the example uses first and last, but feel free to use three or more if you like.
     position: "a Project Manager",
+    linkTree: "https://linktr.ee/lucagump",
     playlistAbout: "https://open.spotify.com/embed/playlist/0aH66jrlUNWxJvXHWmiiXM?utm_source=generator",
     playlistTechnologies: "https://open.spotify.com/embed/playlist/18pqhKxaSdp8yqoarZZ6Ss?utm_source=generator",
     playlistExeperiences: "https://open.spotify.com/embed/playlist/3np2N8qCr9HusUK7jgYCPF?utm_source=generator",

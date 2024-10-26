@@ -50,7 +50,7 @@ export default function BaseLayout() {
             <Grid item>
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                     py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
-                  <p>WIP - Last Update: 10 October 2023</p>
+                  <p>WIP - Last Update: 26 October 2024</p>
                </Box>
             </Grid>
          </Grid>

@@ -10,17 +10,17 @@ const links = [
         to: '/info',
         active: 'link tree'
     },
-    {
+    /*{
         name: 'Experiences',
         to: '/experiences',
         active: 'experiences'
-    },
+    },*/
     {
         name: info.initials,
         type: 'initials',
         to: '/',
         active: 'initials'
-    },
+    }/*,
     {
         name: 'Technologies',
         to: '/technologies',
@@ -30,7 +30,7 @@ const links = [
         name: 'About',
         to: '/about',
         active: 'about'
-    },
+    },*/
 ]
 
 export default function Navbar({darkMode, handleClick}) {
